@@ -32,7 +32,7 @@ export default function Fromto() {
 
     return (
         <div className=" flex justify-center  h-screen">
-            <div className=" backdrop-opacity-10  mt-[100px] w-[1289px] bg-transparent  h-[431px] border-2 border-white border-opacity-10 bg-white bg-opacity-10   rounded-[32px] shadow shadow-inner backdrop-blur-[143.12px] justify-between flex flex-row ">
+            <div className=" backdrop-opacity-10  mt-[100px] w-[1289px] bg-transparent  h-[431px] border-2 border-white border-opacity-10 bg-white bg-opacity-10   rounded-[32px]  shadow-inner backdrop-blur-[143.12px] justify-between flex flex-row ">
                 <div className='flex flex-col mt-[59px] ml-[70px] '>
                     <div>
                         <label class="relative   block ">
@@ -51,12 +51,12 @@ export default function Fromto() {
 
                         </label>
                     </div>
-                    <Button className='flex flex-row gap-x-3 w-[202px] h-[55px] bg-white bg-opacity-30 rounded-[10px] shadow shadow-inner backdrop-blur-[100px] mt-[33px] !border-2 !border-white !border-opacity-20'>
+                    <Button className='flex flex-row gap-x-3 w-[202px] h-[55px] bg-white bg-opacity-30 rounded-[10px] shadow-inner backdrop-blur-[100px] mt-[33px] !border-2 !border-white !border-opacity-20'>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="white"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" /></svg>
                         <span>Search Prices</span>
                     </Button>
                 </div>
-                <div class="w-[599px] h-full bg-white bg-opacity-10 backdrop-opacity-10 rounded-tl-[10px] rounded-tr-[32px] rounded-bl-[10px] rounded-br-[32px] shadow shadow-inner backdrop-blur-[100px] !border-[1px] !border-white !border-opacity-20    py-[32px] ">
+                <div class="w-[599px] h-full bg-white bg-opacity-10 backdrop-opacity-10 rounded-tl-[10px] rounded-tr-[32px] rounded-bl-[10px] rounded-br-[32px] shadow-inner backdrop-blur-[100px] !border-[1px] !border-white !border-opacity-20    py-[32px] ">
 <div className='scrollbar-track-[#0000] flex flex-col gap-y-3 pl-4 pr-1 h-full overflow-auto !scrollbar-thumb-rounded !scrollbar-thumb-[#cfd2d4]  !scrollbar-track-rounded-full  !scrollbar-thin '>
 <Infoitem from="Delhi" destination="Mumbai" price="5000" travelDate="21/34/56" travelDuration="4 hours" startingTime="14:00"  />
 <Infoitem from="DelhiDelhiDelhi" destination="Mumbai" price="5000" travelDate="21/34/56" travelDuration="4 hours" startingTime="14:00"  />
