@@ -1,15 +1,20 @@
 
 import { Input } from "./ui/input.tsx"
 import { Button } from "./ui/button.tsx"
+import Nav from "./nav.js"
 
 export function Authui() {
   return (
-    <div className="max-w-md mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6 text-center">Create an account or sign in</h1>
+    <div className="flex flex-col gap-y-3 bg-[#9B9B9A] h-screen">
+        <Nav/>
+        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center w-[90vw] h-[457px] bg-white bg-opacity-10 rounded-[32px] shadow shadow-inner border-2 border-white border-opacity-20 backdrop-blur-[143.12px]">
+    <div  className="max-w-md mx-auto p-6 text-white">
+      <h1 className="text-5xl font-bold mb-6  text-center">Create an account or sign in</h1>
       <div className="space-y-4">
-        <Input placeholder="name@gmail.com" />
-        <Button className="w-full py-7">Continue with Email</Button>
-        <div className="flex items-center justify-between">
+        <Input placeholder="name@gmail.com" className="bg-opacity-20 placeholder-white placeholder-opacity-50"/>
+        <Button className="w-full py-7 bg-white bg-opacity-15 rounded-md text-white">Continue with Email</Button>
+        <div className="flex items-center justify-between  text-white">
           <hr className="w-full" />
           <p className="px-3 text-sm">or</p>
           <hr className="w-full" />
@@ -18,8 +23,9 @@ export function Authui() {
           <ChromeIcon className=" mr-2" />
           Continue with Google{"\n          "}
         </Button>
-      </div>
-    </div>
+        <div></div>
+      </div></div>
+    </div></div></div>
   )
 }
 
@@ -45,3 +51,6 @@ function ChromeIcon(props) {
     </svg>
   )
 }
+
+
+// style={{width: '100%', height: '100%', background: 'rgba(255, 255, 255, 0.10)', boxShadow: '0px 17.52544403076172px 21.90680694580078px rgba(0, 0, 0, 0.05)', borderRadius: 32, border: '3px rgba(255, 255, 255, 0.15) solid', backdropFilter: 'blur(143.12px)'}}

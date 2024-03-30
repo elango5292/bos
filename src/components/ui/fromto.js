@@ -29,10 +29,20 @@ export default function Fromto() {
         return <canvas ref={canvasRef} />;
     };
 
+    const rectStyle = {
+        width: '90vw',
+        height: '431px',
+        flexShrink: 0,
+        borderRadius: '32px',
+        border: '3px solid rgba(255, 255, 255, 0.15)',
+        background: 'rgba(255, 255, 255, 0.10)',
+        boxShadow: '0px 17.525px 21.907px 0px rgba(0, 0, 0, 0.05), -0.73px 0.73px 0.73px -1.46px rgba(255, 255, 255, 0.35) inset',
+       // backdropFilter: 'blur(164px)',
+      };
 
     return (
         <div className=" flex justify-center  h-screen">
-            <div className=" backdrop-opacity-10  mt-[100px] w-[1289px] bg-transparent  h-[431px] border-2 border-white border-opacity-10 bg-white bg-opacity-10   rounded-[32px]  shadow-inner backdrop-blur-[143.12px] justify-between flex flex-row ">
+            <div style={rectStyle} className="backdrop-blur-[9px] backdrop-opacity-95  h-[431px] justify-between flex flex-row ">
                 <div className='flex flex-col mt-[59px] ml-[70px] '>
                     <div>
                         <label class="relative   block ">

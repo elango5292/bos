@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { FaMoneyBillWave } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 import { FaStopwatch } from "react-icons/fa";
@@ -8,18 +8,10 @@ import { IoIosClock } from "react-icons/io";
 export default function Infoitem({from,destination,price,travelDate,travelDuration,startingTime}){
 
 
-    function Start_End({ start, end }) {
-        return (
-          <div className="flex flex-row justify-between items-center">
-            <span>{start}</span>
-            <div className="flex-1 bg-black mx-2" style={{ height: "1px" }}></div>
-            <span>{end}</span>
-          </div>
-        );
-      }
+   
 
     return(
-        <div className="flex flex-col hover:cursor-pointer w-[95%] h-auto bg-white bg-opacity-20 rounded-[22px] border-2 border-white border-opacity-10">
+        <div className="flex flex-col hover:cursor-pointer w-[95%] h-auto bg-white bg-opacity-20 backdrop-blur-[65px] backdrop-opacity-95 rounded-[22px] border-2 border-white border-opacity-10">
 
 <div className="flex flex-row justify-between items-center px-[21px] py-[15px]">
     <span className="text-[1.3em] font-semibold text-white text-opacity-90">{from}</span>
