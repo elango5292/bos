@@ -37,24 +37,19 @@ export default function Nav() {
             <NavigationMenuList className="gap-x-[16px]">
 
               <NavigationMenuItem>
-                <NavigationMenuLink className="NavigationMenuLink" href="/">
+                <NavigationMenuLink className="NavigationMenuLink" href="/dashboard">
                   <div className="flex flex-row items-center text-white gap-x-1"><FaTicket /><>My Tickets</></div>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <NavigationMenuLink className="NavigationMenuLink" href="/">
-                  <div className="flex flex-row items-center text-white gap-x-1"><FaRoute />
-                    <> Bus Routes </></div>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuLink className="NavigationMenuLink" href="/">
+                <NavigationMenuLink className="NavigationMenuLink" href="/auth">
                   <div className="flex flex-row items-center text-white gap-x-1"><IoSettings />
                     <>   Account </></div>
                 </NavigationMenuLink>
               </NavigationMenuItem>
+              
               <NavigationMenuItem>
                 <div className="NavigationMenuLink p-3  bg-white bg-opacity-30 h-[51px] w-[51px] rounded-full mr-2" >
                   <MdOutlineAccountCircle className="w-full text-white bg-opacity-80 h-full" />

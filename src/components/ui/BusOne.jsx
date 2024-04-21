@@ -1,29 +1,12 @@
 import { useEffect, useState } from 'react';
 export default function Busone(props) {
-  const [booked, setBooked] = useState(["4a", "6b", "5c", "5d", "10c", "9d"]);
-  const [selected, setSelected] = useState(["3a", "2b", "6c", "9c"]);
-  const [pending, setPending] = useState(["5a", "5b"]);
-
-  // 0 - available, 1 - selected, 2 - pending, 3 - booked
-
-  const [seatStatus, setSeatstatus] = useState({
-    "1c":0,"1d":0,
-    "2a":0,"2b":0,"2c":0,"2d":3,
-    "3a":0,"3b":0,"3c":0,"3d":3,
-    "4a":1,"4b":0,"4c":0,"4d":3,
-    "5a":0,"5b":1,"5c":0,"5d":3,
-    "6a":0,"6b":0,"6c":2,"6d":3,
-    "7a":3,"7b":2,"7c":0,"7d":3,
-    "8c":0,"8d":3,
-    "9c":0,"9d":2,
-    "10a":0,"10b":3,"10c":1,"10d":2
-  });
-
+ 
+  
 useEffect(()=>{
 
-console.log(seatStatus)
+console.log(props.seatStatus)
 
-},[seatStatus])
+},[props.seatStatus])
 
   const cbooked = "!fill-[#FF3B30] stroke-[#FFF] stroke-2 hover:stroke-2 hover:stroke-[#6d6d6d]";
   const cavailable = "fill-[#C7C7CC] stroke-[#FFF] stroke-2 hover:stroke-2 hover:stroke-[#6d6d6d]";
@@ -32,27 +15,25 @@ console.log(seatStatus)
 
   function handleSelect(e) {
 
-    if (seatStatus[e.target.id] === 0) {
-      setSeatstatus({ ...seatStatus, [e.target.id]: 1 });
-     
+    if (props.seatStatus[e.target.id] === 0) {
+      props.setSeatstatus({ ...props.seatStatus, [e.target.id]: 1 });
     }
-    else if (seatStatus[e.target.id] === 1) {
-      setSeatstatus({ ...seatStatus, [e.target.id]: 0 });
-     
+    else if (props.seatStatus[e.target.id] === 1) {
+      props.setSeatstatus({ ...props.seatStatus, [e.target.id]: 0 });
     }
   }
 
   function classSelector(id) {
-    if (seatStatus[id] === 3) {
+    if (props.seatStatus[id] === 3) {
       return cbooked
     }
-    else if (seatStatus[id] === 2) {
+    else if (props.seatStatus[id] === 2) {
       return cpending
     }
-    else if (seatStatus[id] === 1) {
+    else if (props.seatStatus[id] === 1) {
       return cselected
     }
-    else if (seatStatus[id] === 0) {
+    else if (props.seatStatus[id] === 0) {
       return cavailable
 
     }
