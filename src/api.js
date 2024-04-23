@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // http://localhost:3001  https://bus-booking-ruby.vercel.app
 const api = axios.create({
-  baseURL: 'http://localhost:3001/api',
+  baseURL: 'https://bus-booking-ruby.vercel.app',
   withCredentials: true,
   responseType: 'json'
 });
