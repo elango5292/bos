@@ -25,7 +25,12 @@ function handleSignup(e) {
 function handleLogin(e) {
   e.preventDefault();
 
-  api.post('/login', { email, password })
+  api.post('/login', { email, password },{
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  },
+    { withCredentials: true })
     .then(response => {
       console.log(response.data);
     })
